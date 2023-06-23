@@ -55,6 +55,7 @@ Test Case 8
 }
 */
 
+// Solution 1 using two pointers | O(n^3) time | O(n) space
 function fourNumberSumS1(array, targetSum) {
   // Write your code here.
   const quadruplets = []; // Initialize an empty array to store the quadruplets
@@ -90,7 +91,7 @@ function fourNumberSumS1(array, targetSum) {
 }
 
 
-// Solution 2 using hash map
+// Solution 2 using hash map | O(n^2) time | O(n^2) space
 function fourNumberSumS2(array, targetSum) {
   const pairs = {}; // Create an empty hash map to store pairs of two numbers and their sums
   const quadruplets = []; // Initialize an empty array to store the quadruplets
@@ -125,7 +126,7 @@ function fourNumberSumS2(array, targetSum) {
 }
 
 
-// Solution 3 using recursion
+// Solution 3 using recursion | O(n^3) time | O(n) space
 function fourNumberSum(array, targetSum) {
   // Recursive function to find all quadruplets
   const fourNumberSumFunc = (array, targetSum, numCount = 0, currentSum = 0, currentQuadruplet = [], quadruplets = []) => {

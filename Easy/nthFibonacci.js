@@ -38,8 +38,7 @@
   Test Case 20 { "n": 20 }
 */
 
-// Solution 1
-
+// Solution 1 Using for loop | O(n) time | O(n) space
 function getNthFibS1(n) {
   // Write your code here.
   let fibA = [0,1];
@@ -49,7 +48,7 @@ function getNthFibS1(n) {
   return fibA[n-1]
 }
 
-// Solution 2 Using for loop with destructuring assignment
+// Solution 2 Using for loop with destructuring assignment | O(n) time | O(1) space
 function getNthFibS2(n) {
   // Write your code here.
   if(n===1) return 0;

@@ -137,7 +137,7 @@
 
 */
 
-// Solution 1
+// Solution 1 | O(n) time | O(1) space
 function isValidSubsequenceS1(array, sequence) {  
   // Write your code here.
   let sequenceIndex = 0;
@@ -149,7 +149,7 @@ function isValidSubsequenceS1(array, sequence) {
   return sequenceIndex === sequence.length;
 }
 
-// Solution 2
+// Solution 2 | O(n) time | O(1) space
 function isValidSubsequenceS2(array, sequence) {
   // Write your code here.
   let sequenceIndex = 0;

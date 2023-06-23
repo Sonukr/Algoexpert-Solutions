@@ -47,6 +47,8 @@ Test Case 10
 Test Case 11
 { "array": [1, 2, 3, 4, 5, 6, 7, 8, 9, 15], "targetSum": 5 }
 */
+
+// Solution 1 using two pointers | O(n^2) time | O(n) space
 function threeNumberSum(array, targetSum) {
   // Write your code here.
   const res = []

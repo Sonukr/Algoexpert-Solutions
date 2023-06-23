@@ -51,7 +51,7 @@ Test Case 12
 
 */  
 
-// Solution 1
+// Solution 1 | Time: O(n^2) | Space: O(1)
 function twoNumberSumS1(array, targetSum) {
   // Write your code here.
   let finalArray = [];
@@ -67,7 +67,7 @@ function twoNumberSumS1(array, targetSum) {
   return finalArray;
 };
 
-// Solution 2
+// Solution 2 | Time: O(n) | Space: O(n)
 function twoNumberSumS2(array, targetSum) {
   // Write your code here.
   // Create an empty set
