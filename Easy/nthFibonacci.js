@@ -38,23 +38,37 @@
   Test Case 20 { "n": 20 }
 */
 
-// Solution 1 Using for loop | O(n) time | O(n) space
+// Solution 1 | O(n) time | O(n) space
+// This function calculates the nth Fibonacci number using a recursive approach.
 function getNthFibS1(n) {
-  // Write your code here.
+  // Declare an array `fibA` to store the Fibonacci numbers.
   let fibA = [0,1];
+
+  // Iterate from 2 up to the given value of n to calculate the nth Fibonacci number.
   for(let i=2; i<=n; i++){
+    // Calculate the next Fibonacci number by adding the previous two numbers in the sequence
     fibA.push(fibA[i-1]+fibA[i-2])
   }
+
+  // Return the calculated nth Fibonacci number from the array `fibA`.
   return fibA[n-1]
 }
 
-// Solution 2 Using for loop with destructuring assignment | O(n) time | O(1) space
+
+// Solution 2 | O(n) time | O(1) space
+// This function calculates the nth Fibonacci number using an iterative approach.
 function getNthFibS2(n) {
-  // Write your code here.
+  // If n is equal to 1, return 0 since the first Fibonacci number is 0.
   if(n===1) return 0;
+
+  // Initialize two variables a and b to keep track of the previous two Fibonacci numbers.
   let [a,b] = [0,1];
+
+  // Iterate from 2 up to the given value of n to calculate the nth Fibonacci number.
   for(let i=2; i<n; i++){
+    // Update the values of a and b by swapping them and adding them together.
     [a,b] = [b,a+b]
   }
+  // Return the calculated nth Fibonacci number.
   return b
 }
